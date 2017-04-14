@@ -45,6 +45,18 @@ app.get('/items', function(req, res) {
     });
 });
 
+// new get
+app.get('/items/:id', function(req, res){
+     Item.findById(req.params.id, function(err, item){
+         if(err) {
+             return res.status(500).json ({
+                 message: 'Internal Server Error'
+             });
+         }
+         res.json(item);
+     });
+})
+
 app.post('/items', function(req, res) {
     Item.create({
         name: req.body.name
