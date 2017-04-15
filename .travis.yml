@@ -11,7 +11,7 @@ addons:
 deploy:
   provider: heroku
   api_key:
-    secure: ESn+emPiwMFhxkEizj0Hp1iZ731350ED8I8n9UeD8rJgMv/QRvQLUeIDIGG+C8+mvQT1M2/dHugicc0aFFXNM0YzgtGf+M75F1snX3XbVyws9YKX7d2mi+cxUMXgTuYA+om6wp2F7+9xyB9Yd4FHvEVNBm+hi6zafFLVZ4dLdYvU3zCqAB8zzXSLPTbFSZMJ3rPvtKVUW4tipCjaf1YgJemDqvn5ilcbEYT+17k+P5pzspoM015tfGlS33/pRuFPh6fNq1uHQLCJrcgtfzC+Vp5o3byH8jkYTSbxabN3A0qDrJ5jeI1ue53dxojphfq07pcDRAgI0OUeQyvwvgmM4PG/QE29g+SltqVhATbb/j613wejxVHmlt+47cHUZW4trcHKVaJZ2qZ/y03LusQJ4E0J1/faV2qnt86aG43OYrpl2ggj8EzLzxwSwbWmaR0qP8DZbAP5d2qDlEgvZCo7kJtSWE56GgtAOxyhUX33QCBOR4YHJixtfGtrTzTkG8TqMLu7QjquAWMVsNzB2CuRGEjo1T6Q6Y4WEDYjPnOe7DHjHH6qUSlzDCiOTJ88i8OfmU5yoSzsTQqgj4DI8Suu78Q9aFjw3DrL4fbatncz2JrJYyhCOoKjYSSjH8gZeOKjJldkBRb75fT3XGhSmXKgf+cdc0zyLIZ6lGB3qEDm15s=
+    secure: 
   app: mongo-shopping-list
   on:
     repo: Mr-Alex-O/mongo-shopping-list
