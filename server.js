@@ -45,7 +45,7 @@ app.get('/items', function(req, res) {
     });
 });
 
-// new get
+// new get by id
 app.get('/items/:id', function(req, res){
      Item.findById(req.params.id, function(err, item){
          if(err) {
@@ -71,6 +71,15 @@ app.post('/items', function(req, res) {
 });
 
 app.put('/items/:id', function(req, res){
+    var id = req.params.id;
+    if(req.body && req.body.id && id != req.body._id){
+    return res.sendStatus(500);
+  }
+  
+  if(!('name' in req.body)){
+    return res.sendStatus(500);
+  }
+ 
     Item.update({ _id: req.params.id }, { name: req.body.name },
     {},
     function(err, raw) {
@@ -79,6 +88,8 @@ app.put('/items/:id', function(req, res){
                 message: 'Internal Server Error'
             });
         }
+        
+        
         res.sendStatus(204);
     });
 });
